@@ -3,6 +3,7 @@ module.exports = {
 
     baseUrl: "https://demoqa.com",
     video: false,
+    fixturesFolder: 'cypress/fixtures',
     retries: {
       runMode: 1,
       openMode: 0
