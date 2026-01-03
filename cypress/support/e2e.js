@@ -12,6 +12,10 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // DemoQA throws cross-origin script errors on page load, these errors are unrelated to the test logic
+    // Returning false prevents Cypress from failing the test
+    return false;
+});
 // Import commands.js using ES2015 syntax:
 import './commands'
