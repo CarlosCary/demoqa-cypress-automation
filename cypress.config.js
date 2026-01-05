@@ -1,6 +1,7 @@
 module.exports = {
   e2e: {
     reporter: "cypress-mochawesome-reporter",
+    screenshotOnRunFailure: true,
     reporterOptions: {
       reportDir: "cypress/reports",
       overwrite: false,
