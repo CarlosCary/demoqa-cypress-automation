@@ -37,8 +37,6 @@ After executing the tests, results are captured using Mochawesome, generating an
 
 ## Notes
 
-Tests are written following Cypress best practices.
-
-Reporting is handled via Mochawesome.
-
-Generated artifacts (reports, screenshots, videos) are excluded from version control.
+- Tests are written following Cypress best practices.
+- Reporting is handled via Mochawesome.
+- Generated artifacts (reports, screenshots, videos) are excluded from version control.
