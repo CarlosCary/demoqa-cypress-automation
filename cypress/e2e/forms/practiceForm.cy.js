@@ -66,7 +66,7 @@ describe("Practice Form", () => {
 
         cy.get('#submit').click();
 
-        //Modal and assertions
+        // Modal and assertions
         cy.get('#example-modal-sizes-title-lg').should('be.visible');
         cy.contains('td', 'Student Name')
             .next()
