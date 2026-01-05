@@ -11,6 +11,16 @@ describe('Radio Buttons', () => {
         // Assertion
         cy.get('.text-success')
             .should('be.visible')
+            .and('contain', 'Yes');
+    });
+
+    it('Selects Impressive radio button', () => {
+        // Action
+        cy.contains('label', 'Impressive').click();
+
+        // Assertion
+        cy.get('.text-success')
+            .should('be.visible')
             .and('contain', 'Impressive');
     });
 
