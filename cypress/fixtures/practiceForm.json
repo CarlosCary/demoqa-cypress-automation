@@ -1,0 +1,17 @@
+{
+  "firstName": "Carlos",
+  "lastName": "Cary",
+  "email": "carlos@test.com",
+  "mobile": "1234567890",
+  "gender": "Male",
+  "birthYear": "1995",
+  "birthMonth": "June",
+  "birthDay": "14",
+  "subject": "Maths",
+  "hobby": "Sports",
+  "address": "123 Cypress Street, Test City",
+  "state": "NCR",
+  "city": "Delhi",
+  "fixturesPath": "cypress/fixtures",
+  "pictureName": "profile.jpeg"
+}
