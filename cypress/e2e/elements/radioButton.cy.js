@@ -6,7 +6,7 @@ describe('Radio Buttons', () => {
 
     it('Selects Yes radio button', () => {
         // Action
-        cy.contains('label', 'No').click();
+        cy.contains('label', 'Yes').click();
 
         // Assertion
         cy.get('.text-success')
