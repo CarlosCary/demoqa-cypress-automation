@@ -1,6 +1,12 @@
 module.exports = {
   e2e: {
-
+    reporter: "cypress-mochawesome-reporter",
+    reporterOptions: {
+      reportDir: "cypress/reports",
+      overwrite: false,
+      html: false,
+      json: true
+    },
     baseUrl: "https://demoqa.com",
     video: false,
     fixturesFolder: 'cypress/fixtures',
@@ -9,7 +15,7 @@ module.exports = {
       openMode: 0
     },
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      require("cypress-mochawesome-reporter/plugin")(on);
     },
   },
 };
