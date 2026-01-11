@@ -54,6 +54,8 @@ This issue allows incomplete and invalid user data to be submitted, compromising
  
 ## Recommendations for Improvement
 - Integrate the test suite into a CI pipeline for automated execution and reporting.
+- Consider refactoring selectors into POM (or a dedicated locator layer) as the test suite grows: 
+  Given the current limited scope of the project, defining selectors directly within spec files is a reasonable and pragmatic choice. Introducing a Page Object Model at this stage could add unnecessary abstraction. However, as the number of test cases and shared UI interactions increases, migrating selectors and reusable actions into page object modules would improve maintainability, reduce duplication, and support long term scalability.
 - Add test categorization (e.g., smoke vs. regression) to optimize execution time.
 - Expand coverage with negative and edge-case scenarios.
 - Some browser window scenarios (such as the New Window Message feature) are not fully testable using Cypress due to the absence of a dedicated URL or accessible DOM content. Use standard anchor elements (href) for navigation instead of relying on window.open.
